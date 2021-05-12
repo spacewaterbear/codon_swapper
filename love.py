@@ -3,10 +3,10 @@ import streamlit.components.v1 as components
 from view.html_variables import buy_a_coffee
 from utils.dna_edition import UtilsDNA
 
-st.title('DNA condon conversion')
+st.title('DNA codons conversion')
 st.image('./images/dna.png')
-old_codon = st.text_input('condon to change', value="ATC", max_chars=3, help="The codon you wish to subsitute")
-new_codon = st.text_input("condon's new value", value="TAG", max_chars=3, help="The new value of the codon you substituted")
+old_codon = st.text_input('codon to change', value="ATC", max_chars=3, help="The codon you wish to subsitute")
+new_codon = st.text_input("codon's new value", value="TAG", max_chars=3, help="The new value of the codon you substituted")
 
 dna = st.text_area('the input dna')
 if dna:
