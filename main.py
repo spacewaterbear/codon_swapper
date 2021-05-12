@@ -1,4 +1,6 @@
 import streamlit as st
+import streamlit.components.v1 as components
+from view.html_variables import buy_a_coffee
 from utils.dna_edition import UtilsDNA
 
 st.title('DNA condon conversion')
@@ -19,3 +21,9 @@ if dna:
 
     else:
         st.write('The number of letter of your string is not divided by three')
+
+
+
+st.write("Made with ❤️ by 🍌")
+
+components.html(buy_a_coffee)
