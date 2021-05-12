@@ -11,6 +11,7 @@ new_codon = st.text_input("condon's new value", value="TAG", max_chars=3, help="
 dna = st.text_area('the input dna')
 if dna:
     if UtilsDNA.check_divided_by_three(dna):
+        st.write('Number of letters can be divided by three')
         if st.button("Generate new dna"):
             new_dna = UtilsDNA.change_condon_from_adn_string(
                                                          adn_string=dna,
@@ -24,6 +25,23 @@ if dna:
 
 
 
+
+
+st.write("   \n")
+st.write("   \n")
+st.write("   \n")
+st.write("   \n")
+st.write("   \n")
+st.write("   \n")
+st.write("   \n")
+st.write("   \n")
+st.write("   \n")
+st.write("   \n")
+st.write("   \n")
+st.write("   \n")
+st.write("   \n")
+
+st.markdown("***")
 st.write("Made with ❤️ by 🍌")
 
 components.html(buy_a_coffee)
